@@ -5,8 +5,13 @@ import org.testng.annotations.Test;
 @Test
 public class NdosiTests extends Base {
 
-    public void clickLoginButton(){
+    @Test(dependsOnMethods = "verifyHomePageIsDisplayed")
+    public void clickLoginButton() {
         homePage.clickLoginButton();
+    }
+
+    public void verifyHomePageIsDisplayed() {
+        homePage.verifyHomePageIsDisplayed();
     }
 
 }

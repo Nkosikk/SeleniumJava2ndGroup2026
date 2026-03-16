@@ -12,6 +12,12 @@ public class BrowserFactory {
 
     static WebDriver driver;
 
+    //  = Browser
+
+    // = Webdriver
+
+    //HomePage
+
     public static WebDriver startBrowser(String browserChoice, String url) {
 
         if (browserChoice.equalsIgnoreCase("chrome")) {
