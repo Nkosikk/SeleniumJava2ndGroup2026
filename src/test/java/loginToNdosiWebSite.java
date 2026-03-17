@@ -27,8 +27,6 @@ public class loginToNdosiWebSite {
         
 
 
-
-
         driver.quit();
     }
 
