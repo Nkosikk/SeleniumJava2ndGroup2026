@@ -25,12 +25,12 @@ public class LoginPage {
         verifyLoginHeading.isDisplayed();
     }
 
-    public void enterEmail(){
-        emailField.sendKeys("njceles@gmail.com");
+    public void enterEmail(String email){
+        emailField.sendKeys(email);
     }
 
-    public void enterPassword(){
-        passwordField.sendKeys("@12345678");
+    public void enterPassword(String password){
+        passwordField.sendKeys(password);
     }
 
     public void clickLoginButton(){
