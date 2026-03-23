@@ -23,6 +23,7 @@ public class HomePage {
     }
 
     public void verifyHomePageIsDisplayed() {
+
         verify_homePage.isDisplayed();
     }
 
