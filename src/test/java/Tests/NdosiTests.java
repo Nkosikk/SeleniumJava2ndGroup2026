@@ -1,6 +1,7 @@
 package Tests;
 
 import Utils.ReadFromFile;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 @Test
@@ -8,6 +9,7 @@ public class NdosiTests extends Base {
 
     public void verifyHomePageIsDisplayed() {
         homePage.verifyHomePageIsDisplayed();
+        takeScreenshots.takeSnapShots(driver, "HomePageScreenshot001");
     }
 
     @Test(dependsOnMethods = "verifyHomePageIsDisplayed")
@@ -28,6 +30,16 @@ public class NdosiTests extends Base {
     @Test(dependsOnMethods = "userEnterPassword")
     public void userClicksLoginButton() {
         loginPage.clickLoginButton();
+    }
+
+    @Test(dependsOnMethods = "userClicksLoginButton")
+    public void loginPageIsDisplayed(){
+        loginPage.verifyLoginPageIsDisplayed();
+    }
+
+    @AfterTest
+    public void closeBrowser() {
+        driver.quit();
     }
 
 }
