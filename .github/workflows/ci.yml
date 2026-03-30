@@ -58,10 +58,16 @@ jobs:
             # Subject line of the email
             subject: Automation Test Results - Extent Report for 2nd Group
             # Recipient email address
-            to: lindvni@gmail.com
+            to: ignatiuskondo@gmail.com
             # Sender email address
             from: ${{ secrets.EMAIL_USERNAME }}
             # Message body in the email
-            body: Hi, please find attached the latest Extent Report.
+            body: Hi, 
+                 I hope you are formatted.
+                 please find attached the latest Extent Report.
+                
+                Kind Regards
+                Ignatius CEO
+
             # Attach the generated report file to the email
             attachments: Reports/ndosiAutomationReport.html
