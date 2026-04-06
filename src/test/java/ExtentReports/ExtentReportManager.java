@@ -8,7 +8,7 @@ import java.io.File;
 
 public class ExtentReportManager {
 
-    private static final String reportDir = System.getProperty("user.dir") + "/Reports/ndosiAutomationReport.html";
+    private static final String reportDir = System.getProperty("user.dir") + "C:\\Users\\R5551293\\OneDrive - FRG\\Desktop\\Resuuu/Reports/ndosiAutomationReport.html";
 
     //Main reporting engine object (holds all test results)
     private static ExtentReports extentReports;
