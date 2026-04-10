@@ -1,5 +1,6 @@
 package Tests;
 
+import Pages.DashboardPage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import Utils.BrowserFactory;
@@ -14,6 +15,7 @@ public class Base {
     protected WebDriver driver;
     protected HomePage homePage;
     protected LoginPage loginPage;
+    protected DashboardPage dashboardPage;
     protected TakeScreenshots takeScreenshots;
 
     @BeforeClass
@@ -24,9 +26,11 @@ public class Base {
 
         homePage = new HomePage(driver);
         loginPage = new LoginPage(driver);
+        dashboardPage = new DashboardPage(driver);
 
         PageFactory.initElements(driver, homePage);
         PageFactory.initElements(driver, loginPage);
+        PageFactory.initElements(driver, dashboardPage);
 
         takeScreenshots = new TakeScreenshots();
     }
